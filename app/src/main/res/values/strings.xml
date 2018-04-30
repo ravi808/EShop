@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EShopDesign</string>
+
+    <string name="Logo">Logo Here</string>
+    <string name="fbsign">Sign in with facebook</string>
+    <string name="or">or</string>
+    <string name="checkbox">Agree to the</string>
+    <string name="terms">terms and Conditons</string>
+    <string name="loginbutton">Create Account</string>
 </resources>
