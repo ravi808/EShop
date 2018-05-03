@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Cattegories"
+        android:title="Categories">
+
+    </item>
+    <item android:id="@+id/MyWallet"
+        android:title="My Wallet">
+
+    </item>
+    <item android:id="@+id/ViewHistory"
+        android:title="View History">
+
+    </item>
+    <item android:id="@+id/Refer"
+        android:title="Refer">
+
+    </item>
+    <item android:id="@+id/HelpCenter"
+        android:title="Help Center">
+
+    </item>
+    <item android:id="@+id/RateUs"
+        android:title="Rate Us">
+
+    </item>
+    <item android:id="@+id/Logout"
+        android:title="Logout">
+
+    </item><!--
+    <item android:id="Cattegories"
+        android:title="Categories">
+
+    </item>
+-->
+</menu>

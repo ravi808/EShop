@@ -7,4 +7,6 @@
     <string name="checkbox">Agree to the</string>
     <string name="terms">terms and Conditons</string>
     <string name="loginbutton">Create Account</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
 </resources>
