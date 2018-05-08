@@ -44,9 +44,9 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
-                Intent i = new Intent(login_activity.this,MainActivity.class);
+               /* Intent i = new Intent(login_activity.this,MainActivity.class);
                 startActivity(i);
-            }
+           */ }
 
             @Override
             public void onCancel() {
@@ -70,6 +70,11 @@ public class login_activity extends AppCompatActivity {
 
     public void register_btn(View v){
         Intent i = new Intent(this,Registration.class);
+        startActivity(i);
+    }
+
+    public void login_btn(View v){
+        Intent i = new Intent(login_activity.this,MainActivity.class);
         startActivity(i);
     }
 }
