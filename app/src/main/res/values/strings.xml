@@ -8,7 +8,7 @@
     <string name="terms">terms and Conditons</string>
     <string name="loginbutton">Login</string>
 
-    <string name="RegisterButton">Create an Account</string>
+    <string name="RegisterButton">Create an Account.</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
     <string name="app_label">Search Engine</string>
@@ -22,5 +22,9 @@
 
     <string name="facebook_app_id">1896105443986465</string>
     <string name="fb_login_protocol_scheme">fb1896105443986465</string>
+
+    <string name="new_account">New to Eshop?</string>
+
+    <string name="line">__________________________________</string>
 
 </resources>
