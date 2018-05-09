@@ -44,9 +44,9 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
-               /* Intent i = new Intent(login_activity.this,MainActivity.class);
+                Intent i = new Intent(login_activity.this,MainActivity.class);
                 startActivity(i);
-           */ }
+            }
 
             @Override
             public void onCancel() {
