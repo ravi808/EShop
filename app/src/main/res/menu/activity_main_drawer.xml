@@ -5,22 +5,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_categories_black_24dp"
+            android:title="Categories" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_my_order"
+            android:icon="@drawable/ic_order_image_black_24dp"
+            android:title="My Order" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="My Wallet" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="View History" />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="Refer &amp; Earn" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help Center" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
     </group>
+<!--
 
     <item android:title="Communicate">
         <menu>
@@ -34,5 +55,6 @@
                 android:title="Send" />
         </menu>
     </item>
+-->
 
 </menu>

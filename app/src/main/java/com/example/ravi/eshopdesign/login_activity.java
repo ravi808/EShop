@@ -76,5 +76,6 @@ public class login_activity extends AppCompatActivity {
     public void login_btn(View v){
         Intent i = new Intent(login_activity.this,MainActivity.class);
         startActivity(i);
+        finish();
     }
 }
