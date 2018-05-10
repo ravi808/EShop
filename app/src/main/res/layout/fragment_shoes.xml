@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            app:srcCompat="@drawable/p4" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/indianwear"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:onClick="indian"
+                    android:text="INDIAN WEAR"
+                    android:textSize="20dp"
+                    android:layout_marginTop="0dp"/>
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/westernwear"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="70sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:onClick="western"
+                    android:text="WESTERN WEAR"
+                    android:textSize="20dp"
+                    android:layout_marginTop="6dp"/>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footwear"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="140sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:onClick="foot"
+                    android:text="FOOT WEAR"
+                    android:textSize="20dp"
+                    android:layout_marginTop="6dp"/>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lingerie"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="210sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:onClick="lingerie"
+                    android:text="@string/lingerie"
+                    android:textSize="20dp"
+                    android:layout_marginTop="6dp"/>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/watches"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="280sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:onClick="watches"
+                    android:text="@string/watches_wearables"
+                    android:textSize="20dp"
+                    android:layout_marginTop="6dp"/>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

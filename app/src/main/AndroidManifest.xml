@@ -43,7 +43,13 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registration"></activity>
+        <activity android:name=".Registration" />
+        <activity android:name=".Category" />
+        <activity android:name=".Indian_Wear" />
+        <activity android:name=".Western_Wear" />
+        <activity android:name=".Foot_Wear" />
+        <activity android:name=".Lingerie_Sleepwear" />
+        <activity android:name=".Watches_Wearables"></activity>
     </application>
 
 </manifest>

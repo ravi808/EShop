@@ -27,4 +27,13 @@
 
     <string name="line">__________________________________</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="watches_wearables"><![CDATA[WATCHES & WEARABLES]]></string>
+    <string name="lingerie_sleepwear"><![CDATA[LINGERIE & SLEEPWEAR]]></string>
+    <string name="lingerie"><![CDATA[LINGERIE & SLEEPWEAR]]></string>
+    <string name="watches"><![CDATA[WATCHES & WEARABLES]]></string>
 </resources>
