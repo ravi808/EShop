@@ -24,4 +24,20 @@
         <item name="android:background">#000000</item>
     </style>
 
+
+    <!--CustomActionBar for Category activity-->
+<!--
+    <style name="CategoryActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+-->
+<!--
+    <item name="android:titleTextStyle">@style/CategoryColor</item>
+-->
+
+    <!--CustomTextColor  for Category activity-->
+  <!--  <style name="CategoryColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+-->
 </resources>

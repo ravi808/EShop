@@ -70,14 +70,12 @@ public class login_activity extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-                Toast.makeText(login_activity.this, "Confirm Key Hash", Toast.LENGTH_SHORT).show();
                 // App code
             }
 
             @Override
             public void onError(FacebookException exception) {
                 // App code
-                Toast.makeText(login_activity.this, "Configure Key Hash2", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -94,9 +92,7 @@ public class login_activity extends AppCompatActivity {
     }
 
     public void login_btn(View v){
-        Intent i = new Intent(login_activity.this,MainActivity.class);
-        startActivity(i);
-    }
+         }
    /* public static Bitmap getFacebookProfilePicture(String userID) throws SocketException, SocketTimeoutException, MalformedURLException, IOException, Exception
     {
         String imageURL;

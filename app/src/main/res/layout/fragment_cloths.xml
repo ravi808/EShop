@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fillViewport="true">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        app:srcCompat="@drawable/m6" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:weightSum="1">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="195dp"
-            app:srcCompat="@drawable/girl" />
-
+        android:fillViewport="true">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -38,11 +39,12 @@
                     android:id="@+id/b1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
                     android:background="#ffffff"
                     android:onClick="indian"
                     android:text="INDIAN WEAR"
-                    android:textSize="20dp"
-                    android:layout_marginTop="0dp"/>
+                    android:textSize="20dp" />
+
                 <View
                     style="@style/Divider"
                     android:layout_height="1dp" />
@@ -60,11 +62,11 @@
                     android:id="@+id/b2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     android:background="#ffffff"
                     android:onClick="western"
                     android:text="WESTERN WEAR"
-                    android:textSize="20dp"
-                    android:layout_marginTop="6dp"/>
+                    android:textSize="20dp" />
 
                 <View
                     style="@style/Divider"
@@ -83,11 +85,11 @@
                     android:id="@+id/b3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     android:background="#ffffff"
                     android:onClick="foot"
                     android:text="FOOT WEAR"
-                    android:textSize="20dp"
-                    android:layout_marginTop="6dp"/>
+                    android:textSize="20dp" />
 
                 <View
                     style="@style/Divider"
@@ -106,11 +108,11 @@
                     android:id="@+id/b4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     android:background="#ffffff"
                     android:onClick="lingerie"
                     android:text="@string/lingerie"
-                    android:textSize="20dp"
-                    android:layout_marginTop="6dp"/>
+                    android:textSize="20dp" />
 
                 <View
                     style="@style/Divider"
@@ -129,19 +131,42 @@
                     android:id="@+id/b5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     android:background="#ffffff"
                     android:onClick="watches"
                     android:text="@string/watches_wearables"
-                    android:textSize="20dp"
-                    android:layout_marginTop="6dp"/>
+                    android:textSize="20dp" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/accessories"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="350sp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="#ffffff"
+                    android:onClick="watches"
+                    android:text="@string/accessories"
+                    android:textSize="20dp" />
 
                 <View
                     style="@style/Divider"
                     android:layout_height="1dp" />
             </LinearLayout>
 
+
         </FrameLayout>
 
+    </ScrollView>
+</LinearLayout>
 
-    </LinearLayout>
-</ScrollView>

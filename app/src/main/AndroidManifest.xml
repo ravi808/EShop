@@ -36,7 +36,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
@@ -44,7 +43,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registration" />
-        <activity android:name=".Category" />
+        <activity android:name=".Category"
+            android:label="Category"/>
+
         <activity android:name=".Indian_Wear" />
         <activity android:name=".Western_Wear" />
         <activity android:name=".Foot_Wear" />
