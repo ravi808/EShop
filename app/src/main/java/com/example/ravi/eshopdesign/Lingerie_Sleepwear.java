@@ -9,7 +9,7 @@ public class Lingerie_Sleepwear extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lingerie_sleepwear);
+        setContentView(R.layout.activity_lingerie__sleepwear);
 
         if(getSupportActionBar()!=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);

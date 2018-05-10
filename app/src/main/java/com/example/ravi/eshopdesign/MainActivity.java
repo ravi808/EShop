@@ -1,5 +1,6 @@
 package com.example.ravi.eshopdesign;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -126,6 +127,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_categories) {
             // Handle the camera action
+            Intent i = new Intent(MainActivity.this,Category.class);
+            startActivity(i);
         } else if (id == R.id.nav_my_order) {
 
         } else if (id == R.id.nav_wallet) {

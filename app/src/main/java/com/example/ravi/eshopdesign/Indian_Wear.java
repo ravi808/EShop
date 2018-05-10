@@ -9,7 +9,7 @@ public class Indian_Wear extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_indian_wear);
+        setContentView(R.layout.activity_indian__wear);
 
         if(getSupportActionBar()!=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
