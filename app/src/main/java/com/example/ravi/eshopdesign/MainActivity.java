@@ -1,5 +1,7 @@
 package com.example.ravi.eshopdesign;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,16 +14,58 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.facebook.Profile;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.SocketException;
+import java.net.SocketTimeoutException;
+import java.net.URL;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
+    CircleImageView pro_pic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pro_pic = findViewById(R.id.profile_image);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Bitmap bm;
+        Profile profile = Profile.getCurrentProfile();
+        String userId = profile.getId();
+
+
+        try {
+            Toast.makeText(this, userId+"", Toast.LENGTH_SHORT).show();
+            bm = getFacebookProfilePicture(userId);
+            Toast.makeText(this, "yoo!", Toast.LENGTH_SHORT).show();
+
+            pro_pic.setImageBitmap(bm);
+            Toast.makeText(this, "Hey!", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, ""+e, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Hi!", Toast.LENGTH_SHORT).show();
+        }
+
+        Toast.makeText(this, "Hello!", Toast.LENGTH_SHORT).show();
+
+
+
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -104,4 +148,20 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public static Bitmap getFacebookProfilePicture(String userID) throws SocketException, SocketTimeoutException, MalformedURLException, IOException, Exception
+    {
+        Bitmap bitmap = null;
+        try{
+            String imageURL;
+            imageURL = "http://graph.facebook.com/"+userID+"/picture?type=large";
+            InputStream in = (InputStream) new URL(imageURL).openConnection().getInputStream();
+            bitmap = BitmapFactory.decodeStream(in);
+        }catch (Exception e){
+            e.getMessage();
+        }
+
+        return bitmap;
+    }
+
 }
